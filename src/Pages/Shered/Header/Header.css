@@ -1,0 +1,7 @@
+.nav-text {
+    color: black !important;
+}
+
+.nav-text:hover {
+    color: orange !important;
+}

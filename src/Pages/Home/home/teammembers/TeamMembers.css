@@ -1,0 +1,57 @@
+.heading_title {
+    border-bottom: 5px solid #FFAD00;
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 25px;
+}
+
+.team-member {
+    margin-bottom: 15px;
+}
+
+.member-img {
+    overflow: hidden;
+    border: 1px solid #FFAD00;
+    box-shadow: 1px 1px #ecca81;
+    width: 100%;
+    object-fit: cover;
+
+
+
+}
+
+.team-member .member-img img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.team-member h4 {
+    font-size: 19px;
+    line-height: 32px;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.team-member .pos {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.team-member .contact a {
+    padding: 0 8px;
+}
+
+.img-responsive {
+
+    height: 300px;
+
+
+}
+
+/* .img-cover {
+    object-fit: cover;
+    width: 100%;
+
+    margin-right: 200px;
+} */

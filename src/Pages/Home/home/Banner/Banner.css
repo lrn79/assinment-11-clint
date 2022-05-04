@@ -1,0 +1,54 @@
+.curv {
+
+    height: 225px;
+    background-color: orange;
+    clip-path: ellipse(300% 100% at 300% 100%);
+}
+
+.banner_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_1 {
+    width: 50%;
+}
+
+.flex_2 {
+    width: 50%;
+}
+
+.btn_style {
+    background-color: orange;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+
+}
+
+.btn_style:hover {
+    background-color: orange;
+    font-weight: 800;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+/* for responsive */
+@media only screen and (max-width:576px) {
+    .banner_flex {
+        flex-direction: column;
+    }
+
+    .flex_1 {
+        width: 100%
+    }
+
+    .flex_2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
