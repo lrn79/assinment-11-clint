@@ -1,23 +1,26 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import './TeamMembers.css'
 
 const TeamMembers = () => {
+
     return (
         <div>
-            <section id="team" className="page-section">
+
+            <section className="page-section">
                 <div className="container">
                     <div className=" text-center">
 
-                        <p className='mt-5 h1 mb-3 heading_title'>Our Team Owners</p>
+                        <p className='mt-5 h1 mb-3 heading_title'>Our Company Owners</p>
                         <h4 className='mb-5'>"We have proper dedication for our company ...we are employ friendly"</h4>
                     </div>
-                    {/* Team Member's Details  */}
+
                     <div className="team-content">
                         <div className="row">
                             <div className="col-md-3 col-sm-6 col-xs-6">
                                 <div className="team-member">
                                     <div className="member-img">
-                                        <img className="img-responsive mx-auto" src="https://scontent.fcgp4-1.fna.fbcdn.net/v/t39.30808-6/267462838_921433385155610_7771997153224572247_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHv04WQa6iAqp9R1RxtuRdn0cuJlow7t2DRy4mWjDu3YHbik_cuY6rM2JgGcpJsF-WKWR-0oCWdpkIMV0K1I0_1&_nc_ohc=H9Xy6iU3XwQAX_ppURR&_nc_zt=23&_nc_ht=scontent.fcgp4-1.fna&oh=00_AT8Fd-9SoRodwuuQZW_pLbygI78U7XOuV31fxzKdVONc3g&oe=6276E3B7" alt="" />
+                                        <img className="img-responsive " src="https://scontent.fcgp4-1.fna.fbcdn.net/v/t39.30808-6/267462838_921433385155610_7771997153224572247_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHv04WQa6iAqp9R1RxtuRdn0cuJlow7t2DRy4mWjDu3YHbik_cuY6rM2JgGcpJsF-WKWR-0oCWdpkIMV0K1I0_1&_nc_ohc=H9Xy6iU3XwQAX_ppURR&_nc_zt=23&_nc_ht=scontent.fcgp4-1.fna&oh=00_AT8Fd-9SoRodwuuQZW_pLbygI78U7XOuV31fxzKdVONc3g&oe=6276E3B7" alt="" />
                                     </div>
                                     <h4>Md Soriful</h4>
                                     <span className="pos">CEO</span>
@@ -60,3 +63,8 @@ const TeamMembers = () => {
 };
 
 export default TeamMembers;
+
+
+
+
+

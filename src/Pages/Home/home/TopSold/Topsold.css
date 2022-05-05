@@ -1,0 +1,17 @@
+.progress_title {
+    border-bottom: 5px solid #FFAD00;
+    margin-right: 550px;
+    margin-left: 550px;
+    border-radius: 25px;
+}
+
+/* for responsive */
+@media only screen and (max-width:576px) {
+    .progress_title {
+        border-bottom: 5px solid #FFAD00;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 25px;
+    }
+
+}

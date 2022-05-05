@@ -6,6 +6,7 @@ import Home from './Pages/Home/home/Home';
 import Login from './Pages/Login/Login';
 import Signup from './Pages/Sign up/Signup';
 import BLog from './Pages/Blog/BLog';
+import Footer from './Pages/Shered/Footer/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/blogs" element={<BLog></BLog>}></Route>
       </Routes>
+      <Footer></Footer>
 
     </div>
   );

@@ -1,12 +1,14 @@
 .heading_title {
     border-bottom: 5px solid #FFAD00;
-    margin-right: 450px;
-    margin-left: 450px;
+    margin-right: 430px;
+    margin-left: 430px;
     border-radius: 25px;
+    padding-bottom: 2px;
 }
 
 .team-member {
     margin-bottom: 15px;
+
 }
 
 .member-img {
@@ -14,15 +16,18 @@
     border: 1px solid #FFAD00;
     box-shadow: 1px 1px #ecca81;
     width: 100%;
-    object-fit: cover;
 
+    border-radius: 15px;
 
 
 }
 
-.team-member .member-img img {
-    max-width: 250px;
-    margin: 0 auto;
+.member-img img {
+    /* max-width: 250px;
+    margin: 0 auto; */
+    width: 100%;
+    object-fit: cover;
+
 }
 
 .team-member h4 {
@@ -55,3 +60,13 @@
 
     margin-right: 200px;
 } */
+/* For responsive */
+@media only screen and (max-width:576px) {
+    .heading_title {
+        border-bottom: 5px solid #FFAD00;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 25px;
+    }
+
+}
