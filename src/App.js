@@ -11,6 +11,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import AddItem from './Pages/AddItem/AddItem';
 import MyItem from './Pages/MyItem/MyItem';
 import ManageItem from './Pages/ManageItem/ManageItem';
+import StokeUpdate from './Pages/StokeUpdate/StokeUpdate';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/myitem' element={<MyItem></MyItem>}></Route>
         <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
+        <Route path='/stokeupdate' element={<StokeUpdate></StokeUpdate>}></Route>
 
       </Routes>
       <Footer></Footer>

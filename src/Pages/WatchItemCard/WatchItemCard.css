@@ -1,0 +1,20 @@
+.card-cover {
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    -webkit-box-shadow: 7px 3px 26px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 3px 26px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 3px 26px 3px rgba(0, 0, 0, 0.75);
+}
+
+.img_height {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.card_btn {
+    margin-left: 280px;
+    margin-bottom: 50px;
+}

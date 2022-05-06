@@ -1,0 +1,21 @@
+.items_title {
+    border-bottom: 5px solid #FFAD00;
+    margin-right: 500px;
+    margin-left: 500px;
+    border-radius: 25px;
+    padding-bottom: 2px;
+}
+
+
+
+
+/* For responsive */
+@media only screen and (max-width:576px) {
+    .items_title {
+        border-bottom: 5px solid #FFAD00;
+        margin-right: 80px;
+        margin-left: 80px;
+        border-radius: 25px;
+    }
+
+}
