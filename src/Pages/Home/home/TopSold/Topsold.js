@@ -4,7 +4,7 @@ import './Topsold.css'
 
 const Topsold = () => {
     return (
-        <div>
+        <div className='mb-5'>
             <div >
                 <p className='mt-5 text-center h1 mb-3 progress_title '>Top Sold Products</p>
             </div>

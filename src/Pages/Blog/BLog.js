@@ -3,7 +3,7 @@ import './bolg.css'
 
 const BLog = () => {
     return (
-        <div className='container'>
+        <div className='container mb-5'>
             <div>
                 <h3 className='text-center mt-4 fw-bolder'><span className='text-warning h1 fs-1'>Q</span>NA SECTION</h3>
                 <div className='container mt-5  blog_container'>

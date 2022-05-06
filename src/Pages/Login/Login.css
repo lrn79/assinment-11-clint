@@ -16,3 +16,16 @@
     box-shadow: 3px 3px 32px 14px rgba(0, 0, 0, 0.75);
     border-radius: 20px;
 } */
+
+.for_hover {
+    width: 100%;
+
+}
+
+.for_hover:hover {
+    border-radius: 20px;
+}
+
+.btn_font {
+    font-size: large;
+}

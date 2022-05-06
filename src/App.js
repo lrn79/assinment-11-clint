@@ -7,6 +7,10 @@ import Login from './Pages/Login/Login';
 import Signup from './Pages/Sign up/Signup';
 import BLog from './Pages/Blog/BLog';
 import Footer from './Pages/Shered/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
+import AddItem from './Pages/AddItem/AddItem';
+import MyItem from './Pages/MyItem/MyItem';
+import ManageItem from './Pages/ManageItem/ManageItem';
 
 
 function App() {
@@ -19,6 +23,11 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/blogs" element={<BLog></BLog>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+        <Route path='/additem' element={<AddItem></AddItem>}></Route>
+        <Route path='/myitem' element={<MyItem></MyItem>}></Route>
+        <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
+
       </Routes>
       <Footer></Footer>
 
