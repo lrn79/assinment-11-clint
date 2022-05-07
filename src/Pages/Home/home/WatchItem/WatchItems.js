@@ -16,7 +16,7 @@ const WatchItems = () => {
                 <Row>
                     {
                         sliceItems.map((item) => (
-                            <WatchItemCard item={item}></WatchItemCard>
+                            <WatchItemCard key={item._id} item={item}></WatchItemCard>
                         ))
                     }
                 </Row>

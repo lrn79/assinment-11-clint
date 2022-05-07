@@ -12,6 +12,7 @@ import AddItem from './Pages/AddItem/AddItem';
 import MyItem from './Pages/MyItem/MyItem';
 import ManageItem from './Pages/ManageItem/ManageItem';
 import StokeUpdate from './Pages/StokeUpdate/StokeUpdate';
+import RequireAuth from './Pages/RequreAuth/RequireAuth';
 
 
 function App() {
@@ -26,9 +27,9 @@ function App() {
         <Route path="/blogs" element={<BLog></BLog>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
-        <Route path='/myitem' element={<MyItem></MyItem>}></Route>
+        <Route path='/myitem' element={<RequireAuth><MyItem></MyItem></RequireAuth>}></Route>
         <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
-        <Route path='/stokeupdate' element={<StokeUpdate></StokeUpdate>}></Route>
+        <Route path='/stokeupdate/:id' element={<StokeUpdate></StokeUpdate>}></Route>
 
       </Routes>
       <Footer></Footer>

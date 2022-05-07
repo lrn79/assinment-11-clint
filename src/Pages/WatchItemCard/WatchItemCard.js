@@ -5,8 +5,10 @@ import './WatchItemCard.css'
 
 const WatchItemCard = ({ item }) => {
     const navigate = useNavigate()
-    const { price, img, quantity, supplierName, description } = item;
-    console.log(img)
+    const { _id, price, img, quantity, supplierName, description } = item;
+    const navigateToUpdateStoke = id => {
+        navigate(`/stokeupdate/${id}`);
+    }
     return (
         <>
             <Col lg={4} md={6} sm={12}>
@@ -24,7 +26,7 @@ const WatchItemCard = ({ item }) => {
 
 
                     </div>
-                    <button onClick={() => navigate('/stokeupdate')} className='btn_style card_btn d-block  mb-5'>Stoke Update</button>
+                    <button onClick={() => navigateToUpdateStoke(_id)} className='btn_style card_btn d-block  mb-5'>Stoke Update</button>
                 </div>
             </Col>
         </>
