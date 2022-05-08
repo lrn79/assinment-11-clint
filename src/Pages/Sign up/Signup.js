@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, ToastContainer } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -94,7 +94,6 @@ const Signup = () => {
                             </Form>
                             <p className='mt-2 text-white'>New here ?  ? <Link to='/login' className='h4 text-warning text-decoration-none' >Login please! </Link></p>
                             <SocialMedia></SocialMedia>
-                            <ToastContainer></ToastContainer>
                         </div>
                     </div>
                 </div>
