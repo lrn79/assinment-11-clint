@@ -1,0 +1,10 @@
+.Add_from {
+    height: 600px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 60px;
+    margin-top: 8vh;
+    -webkit-box-shadow: 3px 3px 32px 14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 32px 14px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 32px 14px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}

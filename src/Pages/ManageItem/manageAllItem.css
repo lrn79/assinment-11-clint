@@ -1,0 +1,15 @@
+.delete_btn {
+    color: orange !important;
+    background-color: red !important;
+    border: 2px solid orange !important;
+    border-radius: 10px !important;
+    font-weight: 622 !important;
+}
+
+.delete_btn:hover {
+    color: orange;
+    background-color: red;
+    border: 2px solid orange;
+    border-radius: 20px;
+    font-weight: 62
+}

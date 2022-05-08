@@ -13,6 +13,7 @@ import MyItem from './Pages/MyItem/MyItem';
 import ManageItem from './Pages/ManageItem/ManageItem';
 import StokeUpdate from './Pages/StokeUpdate/StokeUpdate';
 import RequireAuth from './Pages/RequreAuth/RequireAuth';
+import { ToastContainer } from 'react-bootstrap';
 
 
 function App() {
@@ -33,8 +34,11 @@ function App() {
 
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
 
     </div>
+
+    // issu link : https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-lrn79/issues/1
   );
 }
 

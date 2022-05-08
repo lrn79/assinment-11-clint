@@ -1,0 +1,14 @@
+.SingleCard {
+    height: 100vh;
+    text-decoration: none;
+    border: none;
+    -webkit-box-shadow: 3px 2px 20px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 2px 20px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 2px 20px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.Quantiti_feild {
+    border: 3px solid orange;
+    border-radius: 20px;
+}
