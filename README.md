@@ -13,5 +13,6 @@ This project is [Watches planet](https://warehouse-b2864.firebaseapp.com/).
 * HTML
 * CSS
 * REACT
+* Mongo DB
 
 
