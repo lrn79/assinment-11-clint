@@ -6,7 +6,7 @@ import ManageAllItem from './ManageAllItem';
 
 const ManageItem = () => {
 
-    const { items, setItems, isReload, setIsReload } = useItems("http://localhost:5000/allitem");
+    const { items, setItems, isReload, setIsReload } = useItems("https://salty-everglades-57172.herokuapp.com/allitem");
     const navigate = useNavigate()
 
     return (

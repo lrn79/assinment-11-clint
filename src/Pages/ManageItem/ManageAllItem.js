@@ -20,7 +20,7 @@ const ManageAllItem = ({ item, items, setItems, isReload, setIsReload }) => {
         const confirmPass = window.confirm('Are you sure you want to delete it?');
 
         if (confirmPass) {
-            const url = `http://localhost:5000/deleteQuantity/${id}`;
+            const url = `https://salty-everglades-57172.herokuapp.com/deleteQuantity/${id}`;
             await axios.delete(url)
 
             const remaining = items.filter(item => item._id !== id)

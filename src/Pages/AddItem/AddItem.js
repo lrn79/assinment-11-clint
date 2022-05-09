@@ -21,7 +21,7 @@ const AddItem = () => {
         const item = { supplierName, description, img, price, quantity, email };
 
         // send data to the server
-        fetch('http://localhost:5000/additem', {
+        fetch('https://salty-everglades-57172.herokuapp.com/additem', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

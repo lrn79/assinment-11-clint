@@ -15,7 +15,7 @@ const StokeUpdate = () => {
     // For Decrease Quantity
     const handleQuantity = async (id) => {
         const NewQuantity = quantity - 1;
-        const url = `http://localhost:5000/updatequantity/${id}`;
+        const url = `https://salty-everglades-57172.herokuapp.com/updatequantity/${id}`;
         console.log(url);
         await axios.put(url, { NewQuantity });
         setIsloded(!isloded);
@@ -26,7 +26,7 @@ const StokeUpdate = () => {
         const textQuantity = parseInt(event.target.stokeQuantity.value);
         console.log(textQuantity)
         const NewQuantity = quantity + textQuantity;
-        const url = `http://localhost:5000/updatequantity/${id}`;
+        const url = `https://salty-everglades-57172.herokuapp.com/updatequantity/${id}`;
         await axios.put(url, { NewQuantity });
         setIsloded(!isloded);
         event.target.reset();

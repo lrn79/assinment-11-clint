@@ -7,7 +7,7 @@ import ShowMyItem from './ShowMyItem/ShowMyItem';
 
 const MyItem = () => {
     const [user] = useAuthState(auth);
-    const { items } = useItems(`http://localhost:5000/myitems?email=${user?.email}`);
+    const { items } = useItems(`https://salty-everglades-57172.herokuapp.com/myitems?email=${user?.email}`);
     console.log(items)
     return (
         <Container>

@@ -5,7 +5,7 @@ const useItemStoke = (id) => {
     const [item, setItem] = useState({})
     const [isloded, setIsloded] = useState(false)
     useEffect(() => {
-        const url = `http://localhost:5000/stokeupdate/${id}`;
+        const url = `https://salty-everglades-57172.herokuapp.com/stokeupdate/${id}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())

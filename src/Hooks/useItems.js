@@ -12,4 +12,4 @@ const useItems = (url) => {
 }
 export default useItems
 
-// http://localhost:5000/allitem
+// https://salty-everglades-57172.herokuapp.com/allitem
