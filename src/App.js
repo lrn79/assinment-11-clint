@@ -30,7 +30,7 @@ function App() {
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/myitem' element={<RequireAuth><MyItem></MyItem></RequireAuth>}></Route>
         <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
-        <Route path='/stokeupdate/:id' element={<StokeUpdate></StokeUpdate>}></Route>
+        <Route path='/stokeupdate/:id' element={<RequireAuth><StokeUpdate></StokeUpdate></RequireAuth>}></Route>
 
       </Routes>
       <Footer></Footer>

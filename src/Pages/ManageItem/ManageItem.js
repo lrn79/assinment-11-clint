@@ -6,7 +6,7 @@ import ManageAllItem from './ManageAllItem';
 
 const ManageItem = () => {
 
-    const [items] = useItems();
+    const { items, setItems, isReload, setIsReload } = useItems("http://localhost:5000/allitem");
     const navigate = useNavigate()
 
     return (
@@ -19,7 +19,12 @@ const ManageItem = () => {
                 <Row>
                     {
                         items.map((item) => (
-                            <ManageAllItem key={item._id} item={item}></ManageAllItem>
+                            <ManageAllItem key={item._id} item={item} setItems={setItems}
+                                isReload={isReload}
+                                setIsReload={setIsReload}
+                                items={items}
+
+                            ></ManageAllItem>
                         ))
                     }
                 </Row>

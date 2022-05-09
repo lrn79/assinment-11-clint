@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react';
-const useItems = () => {
+const useItems = (url) => {
     const [items, setItems] = useState([]);
+    const [isReload, setIsReload] = useState(false);
+
     useEffect(() => {
-        fetch('http://localhost:5000/allitem')
+        fetch(url)
             .then(res => res.json())
             .then((data) => setItems(data))
-    }, [])
-    return [items, setItems]
+    }, [isReload, url])
+    return { items, setItems, isReload, setIsReload }
 }
 export default useItems
+
+// http://localhost:5000/allitem

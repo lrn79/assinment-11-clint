@@ -1,6 +1,7 @@
 .footer {
     background: #0a0926;
     padding: 30px 0 0 0;
+    /* margin-top: 30px; */
     font-size: 12px;
     color: rgb(255, 255, 255);
     border-radius: 3px;
@@ -26,16 +27,6 @@
 }
 
 
-
-.footer .entry-meta a {
-    color: #333333;
-}
-
-.footer .entry-meta .meta-in {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
 
 /* .footer-gap {
     margin-right: 10px;

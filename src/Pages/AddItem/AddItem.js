@@ -1,9 +1,13 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 import './AddItem.css'
+import auth from '../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth'
 
 const AddItem = () => {
+    const [user] = useAuthState(auth)
     const handleAddUser = e => {
+
         e.preventDefault();
         const supplierName = e.target.supplierName.value;
         const description = e.target.description.value;
@@ -11,7 +15,10 @@ const AddItem = () => {
         const price = e.target.price.value;
         const quantity = e.target.quantity.value;
 
-        const item = { supplierName, description, img, price, quantity };
+        const email = user?.email;
+
+
+        const item = { supplierName, description, img, price, quantity, email };
 
         // send data to the server
         fetch('http://localhost:5000/additem', {
@@ -62,18 +69,3 @@ const AddItem = () => {
 };
 
 export default AddItem;
-
-
-{/* <form className='mx-auto w-75 borderr' onSubmit={handleAddUser}>
-<input className='w-50 mt-3 mb-3 form-control ' type="text" name="supplierName" placeholder='Add SupplierName' required />
-<br />
-<textarea className='w-50 mt-3 mb-3 ' name="description" placeholder='Add description' cols="30" rows="5"></textarea>
-<br />
-<input className='w-50 mt-3 mb-3 ' type="text" name="img" placeholder='Add img' required />
-<br />
-<input className='w-50 mt-3 mb-3 ' type="text" name="price" placeholder='Add price' required />
-<br />
-<input className='w-50 mt-3 mb-3 ' type="text" name="quantity" placeholder='Add quantity' required />
-<br />
-<input className='btn_style mt-3 mb-3 ' type="submit" value="Add User" />
-</form> */}

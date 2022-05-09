@@ -1,42 +1,20 @@
-import axios from 'axios';
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import './manageAllItem.css'
 
-
-const ManageAllItem = ({ item, items, setItems, isReload, setIsReload }) => {
-    console.log(items)
-
+const ShowMyItem = ({ item }) => {
     const navigate = useNavigate()
     const { _id, price, img, quantity, supplierName, description } = item;
     const navigateToUpdateStoke = id => {
         navigate(`/stokeupdate/${id}`);
     }
 
-    // For delete A card
-    const handleDelete = async (id) => {
-        // console.log(id)
-        const confirmPass = window.confirm('Are you sure you want to delete it?');
-
-        if (confirmPass) {
-            const url = `http://localhost:5000/deleteQuantity/${id}`;
-            await axios.delete(url)
-
-            const remaining = items.filter(item => item._id !== id)
-            setItems(remaining)
-            setIsReload(!isReload)
-
-        }
-
-    };
 
     return (
-        <>
+        <div>
             <Col lg={4} md={6} sm={12}>
                 <div>
                     <div className='card-cover '>
-                        <button className='delete_btn' onClick={() => handleDelete(_id)} >Delete it ‼</button>
                         <div>
                             <img className=' d-block mx-auto img_height' src={img} alt="" />
                         </div>
@@ -59,8 +37,8 @@ const ManageAllItem = ({ item, items, setItems, isReload, setIsReload }) => {
                     </div>
                 </div>
             </Col>
-        </>
+        </div>
     );
 };
 
-export default ManageAllItem;
+export default ShowMyItem;

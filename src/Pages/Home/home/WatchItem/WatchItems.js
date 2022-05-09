@@ -5,7 +5,7 @@ import WatchItemCard from '../../../WatchItemCard/WatchItemCard';
 import './WatchItems.css'
 
 const WatchItems = () => {
-    const [items] = useItems();
+    const { items } = useItems("http://localhost:5000/allitem");
     const sliceItems = items.slice(0, 6)
     return (
         <>
