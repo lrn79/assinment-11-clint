@@ -11,6 +11,6 @@ This project is [Watches planet](https://warehouse-b2864.firebaseapp.com/).
 
 ## I used for this project -
 * HTML
-* css
+* CSS
 
 
